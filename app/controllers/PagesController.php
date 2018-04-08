@@ -3,11 +3,16 @@
 	class PagesController extends Controller{
 
 		public function __construct(){
-			//echo 'Pages Controller is loaded';
+			$this->postModel = $this->model('Post');
 		}
 
 		public function indexAction(){
-				$data = ['title'=>'Welcome'];
+
+				$posts = $this->postModel->getPosts();
+				$data = [
+					'title'=>'Welcome',
+					'posts' => $posts
+				];
 				$this->view('Pages/index',$data);
 		}
 		public function aboutAction($id){
