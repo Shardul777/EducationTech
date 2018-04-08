@@ -7,8 +7,8 @@
 		}
 
 		public function indexAction(){
-
-				$this->view('Header');
+				$data = ['title'=>'Welcome'];
+				$this->view('Pages/index',$data);
 		}
 		public function aboutAction($id){
 

@@ -17,7 +17,9 @@ class Core{
 		
 		$url = $this->getUrl();
 
-		// loook in controllers for first value
+		// look in controllers for first value
+
+		// below path is given considering we are public/index.php
 
 		if(file_exists('../app/controllers/'.ucwords($url[0]).'Controller.php')){
 

@@ -26,9 +26,10 @@
 			// Check for the view file
 
 			if(file_exists('../app/views/'.$view.'.phtml')){
-
 				require_once '../app/views/'.$view.'.phtml';
 			}else{
+
+				// Put a 404 Page instead of die()
 				die('View does not exist');
 			}
 		}
