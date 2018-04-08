@@ -1,8 +1,40 @@
 <?php require APPROOT . '/views/include/header.phtml'; ?>
-	<h1><?php echo $data['title']." " ?>Hello world </h1>
-	<ul>
-		<?php foreach($data['posts'] as $post) : ?>
-			<li><?php echo $post->title; ?></li>
-		<?php endforeach; ?>
-	</ul>
+	 
+	
+	<div class="container-fluid">
+		 <div class="container-fluid mainContainer">
+
+		 	<div class="container">
+			 	<div class="row justify-content-center">
+
+				 	<div class="col-sm-3 menuContainer">
+				 		<div class="row imgContainer" >
+				 			<img src="/EducationTech/public/images/profile_pic.jpg" style="height:100%;width:100%">
+				 		</div>
+
+				 		<div class="row optionContainer details">
+				 			<h5 class="headerText"> Personal Details </h5>
+				 		</div>
+				 		<div class="row optionContainer education">
+				 			<h5 class="headerText"> Education </h5>			 			
+				 		</div>
+				 		<div class="row optionContainer skills_project">
+				 			<h5 class="headerText"> Skills & Projects </h5>			 		
+				 		</div>
+				 		<div class="row optionContainer workExp">
+				 			<h5 class="headerText"> Work Experience </h5>			 		
+				 		</div>
+				 		<div class="row optionContainer awards">
+				 			<h5 class="headerText"> Awards </h5>			 		
+				 		</div>
+				 	</div>
+
+				 	<div class="col-sm-6 menuDescContainer">
+				 	</div>
+
+				 </div>
+			</div>
+
+		 </div>
+
 <?php require APPROOT . '/views/include/footer.phtml'; ?>
